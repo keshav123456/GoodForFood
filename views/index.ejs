@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+
+<style>
+
+.margin {
+	margin-left: 3%;
+	margin-top: .8%;
+}
+
+.marginleft {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.bar {
+	background-color: rgba(69,90,100,1);
+}
+
+.center {
+
+	margin-left: 0px;
+
+}
+.bordered {
+
+  margin-top: 20%; 
+}
+</style>
+</head>
+
+<body>
+
+
+
+<div class='navbar-fixed'>
+<nav>
+    <div class="nav-wrapper">
+
+<h4 text-align="center" class="margin" > <%= title %> </h4>
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+</div>
+
+
+<table class='bordered'>
+ <tr>
+	<th> name </th>
+	<th> weight </th>
+	<th> service </th>
+</tr>
+
+
+<% for(var i=0; i < namedata.length; i++) { %>
+  
+<tr>
+    <td><%= namedata[i].name %></td>
+	    <td><%= namedata[i].weight %> kg </td>   
+	    <td> <%= namedata[i].service %> </td>
+</tr>
+<% } %>
+</table>
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
