@@ -15,7 +15,7 @@ This is a sample node/express app that renders ejs templates as the front end, a
 Please install the npm libraries required before running it - namely express,ejs,mongodb,d3 etc.
 Please also set up mongodb on your local server (preferably port 27017)
 
-The command to run it is "node server.js"
+The command to run it is "node server.js" (or nodemon if you prefer working with it)
 
 When run, it opens up two servers on the localhost - ports 3000 and 8080. 
 3000 is used to view the data and is the access point for the UI.
